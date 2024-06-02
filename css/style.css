@@ -28,6 +28,7 @@ body {
      font-family: 'Baloo Bhaijaan 2', sans-serif;
      line-height: 1.80857;
      font-weight: normal;
+
 }
 
 .container {
@@ -47,7 +48,8 @@ h6 {
      font-weight: normal;
      line-height: normal;
      color: #fff;
-     margin: 0
+     margin: 0;
+     text-align: right;
 }
 
 i img{
@@ -56,7 +58,6 @@ i img{
 
 h1 {
      font-size: 24px;
-     font-family: 'Raleway', sans-serif;
 }
 
 h2 {
@@ -88,6 +89,8 @@ p {
      font-weight: 400;
      font-size: 15px;
      line-height: 24px;
+     text-align: right;
+
 }
 
 
@@ -126,7 +129,26 @@ button {
      text-transform: uppercase;
      padding: 0 0 3px 0;
      position: relative;
+     transition: 500ms; 
+}
+h1.logo{
+     font-size: 50px;
+     color: black;
+}
+.nav-bar{
+     margin: 0 23px;
+     color: #030000;
+     font-size: 17px;
+     line-height: 20px;
+     font-weight: 400;
+     text-transform: uppercase;
+     padding: 0 0 3px 0;
+     position: relative;
      transition: 500ms;
+}
+
+.nav-bar-nav li{
+     marker: none;
 }
 
 .navigation.navbar-dark .navbar-nav .nav-link:focus,
@@ -138,69 +160,53 @@ button {
 .header {
      width: 100%;
      padding: 73px 80px;
-     background: #29abe2;
+     background: #152c52;
      background-size: 100% 100%;
      background-repeat: no-repeat;
 }
 
 .white_bg {
-     background: #fff;
+     background-image: url('/images/hero-grid.png');
      border-radius: 50px;
      opacity: 0.9;
      padding: 40px 35px;
-     margin: 20px;
 }
 
 .logo a img{
-     width: 180px;
-     font-size: 40px;
-     font-weight: bold;
-     text-transform: uppercase;
-     color: #000;
-     line-height: 40px;
+     width: 190px;
+
 }
 
 
 /** banner section **/
 
-.banner_main {
-     padding: 60px 0 20px 0;
-}
-
-.text-bg {
-     text-align: left;
-}
-
-.text-bg span {
-     color: #fdb832;
-     font-weight: bold;
-     font-size: 40px;
-     line-height: 50px;
-}
-
 .text-bg h1 {
-     color: #050505;
-     font-size: 66px;
+     color: #29abe2;
+     font-size: 80px;
      line-height: 70px;
      padding-bottom: 35px;
-     font-weight: 600;
-     text-transform: uppercase;
+     font-weight: 800;
 }
 
 .text-bg p {
-     line-height: 28px;
-     padding-bottom: 50px;
+     font-size: 28px;
+     line-height: 1.4;
+     padding-bottom: 20px;
      display: block;
      color: #1f1f1f;
-     font-size: 17px;
 }
 
-.text-bg .read_more {
-     max-width: 200px;
+.text-bg button {
+     font-size: 20px;
+     padding: 10px 30px;
+     border-radius: 32px;
+     background-color: #8ec63f;
+     color: white;
+     font-weight: bold;
 }
 
 .text_img figure {
-     margin: 0;
+     margin-bottom: -120px;
 }
 
 .text_img figure img {
@@ -413,13 +419,14 @@ button {
 
 .footer {
      background-color: #152c52;
+     width: 100%;
      text-align: center;
-     margin-top: 90px;
 }
 
 .copyright {
-     color: #fff;
+     color: white;
      text-align: center;
+     font-size:18px;
      padding-top: 35px;
      padding-bottom: 35px;
 }
